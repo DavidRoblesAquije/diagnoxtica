@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Bioliquid;
+    src: url(fonts/bioliquid-Regular.ttf);
+}
+
+@font-face {
+    font-family: RalewayBold;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: RalewayMedium;
+    src: url(fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: RalewayRegular;
+    src: url(fonts/Raleway-Regular.ttf);
+}

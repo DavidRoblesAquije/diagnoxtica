@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Bioliquid;
+  src: url(fonts/bioliquid-Regular.ttf);
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: RalewayMedium;
+  src: url(fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(fonts/Raleway-Regular.ttf);
+}
+
+* h1, * h2, * h3 {
+  margin: 0;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: RalewayRegular, Arial, sans-serif !important;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h1 {
+  font-family: Bioliquid;
+  font-size: 80px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: RalewayBold;
+}
+
+button:hover {
+  transition: all .3s ease-in-out;
+}
+
+/* Cabecera */
+
+.cabezera {
+  height: 100vh;
+  min-height: 650px;
+  max-height: 1080px;
+  color: #fff;
+}
+
+.firstCarousel {
+  background-image: url(./images/encabezado_bg1.png);
+}
+
+.secondCarousel {
+  background-image: url(./images/encabezado_bg2.png);
+}
+
+.thirdCarousel {
+  background-image: url(./images/encabezado_bg3.png);
+}
+
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+}
+
+/* Carousels */
+
+.carousel__container {
+  display: flex;
+  align-items: center;
+  height: -webkit-fill-available;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    height: -ms-fill-available;
+  }
+}
+
+.carousel__presentation p {
+  font-size: 20px;
+}
+
+.carousel__presentation button {
+  background: #F98702;
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel__presentation button:hover {
+  background: #fff;
+  color: #F98702;
+}
+
+/* nosotros */
+
+.nosotros__content {
+  position: relative;
+}
+
+.nosotros__title h2, .nosotros__title h1 {
+  color: #F98702;
+}
+
+.nosotros__title h2 {
+  margin: 0;
+
+}
+
+.nosotros__title h1 {
+  font-size: 50px;
+  line-height: 30px;
+}
+
+.nosotros__title p {
+  padding-top: 40px;
+}
+
+.mision__vision {
+  position: relative;
+  margin-top: 50px;
+}
+
+.mv__buttons {
+  display: flex;
+  column-gap: 20px;
+}
+
+.mv__button {
+  display: flex;
+  align-items: center;
+}
+
+.mv__button button {
+  background: #B8B2B4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+  font-family: Bioliquid;
+  font-size: 40px;
+  padding: 0px 15px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mv__button p {
+  font-family: RalewayBold;
+  font-size: 20px;
+}
+
+.line {
+  background: #F98702;
+  width: 150px;
+  height: 3px;
+  margin: 15px 0;
+}
+
+.info__mv {
+  position: absolute;
+}
+
+.info__vision {
+  visibility: hidden;
+}
