@@ -32,8 +32,8 @@
                 <div class="carousel__container">
                     <div class="container">
                         <div class="carousel__presentation">
-                            <h1>DIAGNOXTICA</h1>
-                            <p>
+                            <h1 class="mb-3">DIAGNOXTICA</h1>
+                            <p class="mb-4">
                                 La sonrisa es uno de los elementos clave para la
                                 armonia del rostro y la belleza
                             </p>
@@ -47,8 +47,8 @@
                 <div class="carousel__container">
                     <div class="container">
                         <div class="carousel__presentation">
-                            <h1>DIAGNOXTICA</h1>
-                            <p>
+                            <h1 class="mb-3">DIAGNOXTICA</h1>
+                            <p class="mb-4">
                                 La sonrisa es uno de los elementos clave para la
                                 armonia del rostro y la belleza
                             </p>

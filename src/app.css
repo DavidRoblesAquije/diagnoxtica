@@ -22,6 +22,11 @@
   margin: 0;
 }
 
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -110,7 +115,50 @@ button:hover {
   color: #F98702;
 }
 
+@media screen and (max-width:767px) {
+  .carousel__presentation h1 {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .carousel__presentation {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .carousel__presentation h1 {
+    font-size: 50px;
+  }
+
+  .carousel__presentation p {
+    font-size: 16px;
+  }
+}
+
 /* nosotros */
+
+.nosotros__section {
+  overflow: hidden;
+  padding: 100px 0;
+  position: relative;
+}
+
+.circlenosotros {
+  background: #F98702;
+  border-radius: 50%;
+  height: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  width: 600px;
+  z-index: -1;
+}
+
+.imageMV {
+  width: 400px;
+}
 
 .nosotros__content {
   position: relative;
@@ -121,8 +169,8 @@ button:hover {
 }
 
 .nosotros__title h2 {
+  font-weight: bold;
   margin: 0;
-
 }
 
 .nosotros__title h1 {
@@ -136,50 +184,351 @@ button:hover {
 
 .mision__vision {
   position: relative;
-  margin-top: 50px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
 }
 
 .mv__buttons {
-  display: flex;
-  column-gap: 20px;
+  text-align: center;
 }
 
 .mv__button {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .mv__button button {
+  align-items: center;
   background: #B8B2B4;
   border: none;
   color: #fff;
   cursor: pointer;
-  margin-right: 5px;
+  display: flex;
   font-family: Bioliquid;
   font-size: 40px;
-  padding: 0px 15px;
-  padding-bottom: 5px;
-  display: flex;
-  align-items: center;
+  height: 50px;
   justify-content: center;
+  margin-right: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 22px;
 }
 
 .mv__button p {
   font-family: RalewayBold;
   font-size: 20px;
+  color: #B8B2B4;
 }
 
-.line {
+.btnActive button {
   background: #F98702;
-  width: 150px;
-  height: 3px;
-  margin: 15px 0;
 }
 
-.info__mv {
+.btnActive p {
+  color: #F98702;
+}
+
+@media screen and (max-width:991px) {
+  .imageMV {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .nosotros__section {
+    padding: 50px 0;
+  }
+
+  .nosotros__section .row {
+    flex-direction: column-reverse;
+  }
+
+  .circlenosotros {
+    height: 400px;
+    width: 400px;
+  }
+
+  .nosotros__title {
+    text-align: center;
+  }
+
+  .imageMV {
+    width: 250px;
+    margin-bottom: 25px;
+  }
+
+  .mision__vision {
+    margin-top: 50px;
+    grid-template-columns: 100%;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .circlenosotros {
+    height: 320px;
+    width: 320px;
+  }
+}
+
+
+/* servicios */
+
+.servicios__section {
+  overflow: hidden;
+  position: relative;
+  background-image: url("./images/ofrecemos.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.servicios__title {
+  text-align: right;
+}
+
+.servicios__title h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.servicios__title h1 {
+  font-size: 50px;
+  line-height: 30px;
+}
+
+.servicios__title p {
+  padding-top: 40px;
+  width: 550px;
+}
+
+.circleservicios {
+  background: #B8B2B4;
+  opacity: 0.9;
+  border-radius: 50%;
+  height: 450px;
   position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 450px;
 }
 
-.info__vision {
-  visibility: hidden;
+.servicios__cards {
+  position: relative;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.servicios__card {
+  margin: 20px;
+}
+
+.card-body {
+  color: #000;
+  font-family: RalewayMedium;
+}
+
+.card-title {
+  font-family: Bioliquid;
+}
+
+@media screen and (max-width:991px) {
+  .circleservicios {
+    height: 350px;
+    width: 350px;
+  }
+
+  .servicios__title {
+    text-align: center;
+  }
+
+  .servicios__title p {
+    width: 100%;
+  }
+
+  .servicios__cards {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .servicios__section {
+    padding: 75px 0;
+  }
+
+  .circleservicios {
+    height: 300px;
+    width: 300px;
+  }
+
+  .servicios__title h1 {
+    font-size: 45px;
+  }
+
+  .servicios__title p {
+    width: 100%;
+  }
+
+  .servicios__cards {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .servicios__cards {
+    width: 100%;
+  }
+}
+
+/* opiniones */
+
+.opiniones__section {
+  overflow: hidden;
+  position: relative;
+  background-image: url("./images/opiniones.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background: #F98702;
+}
+
+.slide p {
+  width: 550px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.slide h3 {
+  font-family: RalewayMedium;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.comilla {
+  width: 45px;
+}
+
+@media screen and (max-width:767px) {
+  .opiniones__section {
+    padding: 50px 0;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .slide p {
+    width: 100%;
+  }
+
+  .comilla {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .slide p {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .slide p {
+    height: 150px;
+  }
+}
+
+/* Sedes */
+
+.sedes__section {
+  overflow: hidden;
+  position: relative;
+  background: url("./images/sedes.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.sedes__section h3 {
+  color: #F98702;
+  font-family: Bioliquid;
+  font-size: 50px;
+}
+
+.colmapa {
+  text-align: center;
+  font-family: RalewayMedium;
+}
+
+.mapaSede {
+  border: 2px solid #B8B2B4;
+  box-shadow: 0px 0px 10px 0px #B8B2B4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width:767px) {
+  .sedes__section {
+    padding: 50px 0;
+  }
+
+  .sedes__section h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .sedes__section h3 {
+    font-size: 35px;
+  }
+}
+
+footer {
+  background: #F98702;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.titleagenda {
+  font-family: Bioliquid;
+  font-size: 35px;
+}
+
+.agendarcita {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.redessociales svg {
+  margin-right: 40px;
+  margin-left: 6px;
+  color: #000;
+  scale: 2;
 }
