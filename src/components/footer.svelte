@@ -117,3 +117,10 @@
         </div>
     </div>
 </footer>
+<div class="elaboradopor text-center"
+style={
+    "background-color: #1a1a1a; color: #fff; padding: 10px 0;"
+
+}>
+    Desarrollado por <a href="https://softgaebal.com/">SoftGaebal</a>
+</div>

@@ -2,7 +2,7 @@
     import nosotrosimg from "../images/nosotros.png";
 </script>
 
-<section class="nosotros__section">
+<section id="nosotros" class="nosotros__section">
     <div class="circlenosotros"></div>
 
     <div class="container">

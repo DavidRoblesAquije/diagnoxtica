@@ -26,7 +26,7 @@
     ];
 </script>
 
-<section class="servicios__section">
+<section id="servicios" class="servicios__section">
     <div class="circleservicios"></div>
 
     <div class="container">

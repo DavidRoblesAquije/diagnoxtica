@@ -6,9 +6,16 @@
   import Opiniones from "./components/opiniones.svelte";
   import Sedes from "./components/sedes.svelte";
   import Footer from "./components/footer.svelte";
+    import Enlacesfijos from "./components/enlacesfijos.svelte";
+    import Navbar from "./template/navbar.svelte";
 </script>
 
 <main>
+  <!-- Navegacion -->
+  <Navbar/>
+  <!-- enlaces fijos -->
+  <Enlacesfijos />
+  <!-- secciones -->
   <Cabezera />
   <Nosotros />
   <Servicios />

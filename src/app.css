@@ -62,6 +62,55 @@ button:hover {
   transition: all .3s ease-in-out;
 }
 
+/* navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-family: Bioliquid;
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #F98702 !important;
+}
+
+.nav-link{
+  font-family: RalewayBold;
+}
+
+/* enlaces fijos */
+.enlacesfijos {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: red;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+.enlace {
+  padding: 10px;
+}
+
+.enlace img {
+  width: 45px;
+}
+
+@media screen and (max-width:575px) {
+  .enlace {
+    padding: 8px;
+  }
+
+  .enlace img {
+    width: 35px;
+  }
+}
+
 /* Cabecera */
 
 .cabezera {
